@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Logs
 logs
 *.log
@@ -28,6 +29,9 @@ node_modules
 # Java Projects related files
 
 .class
+=======
+*.class
+>>>>>>> c647489dfd8b1948b7cfa460d6fdd40565c642ec
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
@@ -39,6 +43,7 @@ node_modules
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+<<<<<<< HEAD
 
 # Idea files
 *.iml
@@ -105,3 +110,5 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+=======
+>>>>>>> c647489dfd8b1948b7cfa460d6fdd40565c642ec

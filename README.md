@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Simple Mask Function for Apache Drill
 
 This project contains a simple example for a custom function for Apache Drill.
@@ -66,3 +67,7 @@ SELECT MASK(first_name, '*' , 3) FIRST , MASK(last_name, '#', 7) LAST  FROM cp.`
 ```
 
 
+=======
+# drill-network-functions
+Networking functions for Apache Drill
+>>>>>>> c647489dfd8b1948b7cfa460d6fdd40565c642ec
