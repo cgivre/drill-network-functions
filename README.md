@@ -14,4 +14,8 @@ This library contains a collection of network-related functions for Apache Drill
 
 * `getBroadcastAddress( <CIDR Block> )`:  Returns the broadcast address in dotted decimal notation from a given CIDR block.
 
-* `getNetmasK( <CIDR Block> )`:
+* `getNetmask( <CIDR Block> )`:  Returns the netmask for a given CIDR Block
+
+* `getLowAddress( <CIDR Block> )`:  Returns the first IPv4 address in dotted decimal notation for a given CIDR Block
+
+* `getHighAddress( <CIDR Block> )`:  Returns the last IPv4 address in dotted decimal notation for a given CIDR Block
