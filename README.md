@@ -25,4 +25,4 @@ This collection of functions does not have any dependencies that are not already
 `mvn clean package -DskipTests`.
 Once you've done that, you'll find two `.jar` files in the `target/` folder.  Copy both these files to `<drill path>/jars/3rdParty`.
 
-Alternatively, you can download the jar files here: and copy them to `<drill path>/jars/3rdParty`.
+Alternatively, you can download the jar files here: https://github.com/cgivre/drill-network-functions/releases and copy them to `<drill path>/jars/3rdParty`.
