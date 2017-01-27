@@ -1,6 +1,6 @@
 package org.apache.drill.contrib.function;
 
-import com.google.common.base.Strings;
+
 import io.netty.buffer.DrillBuf;
 import org.apache.drill.exec.expr.DrillSimpleFunc;
 import org.apache.drill.exec.expr.annotations.FunctionTemplate;
@@ -8,7 +8,6 @@ import org.apache.drill.exec.expr.annotations.Output;
 import org.apache.drill.exec.expr.annotations.Param;
 import org.apache.drill.exec.expr.holders.BitHolder;
 import org.apache.drill.exec.expr.holders.NullableVarCharHolder;
-import org.apache.drill.exec.expr.holders.VarCharHolder;
 
 import javax.inject.Inject;
 
