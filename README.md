@@ -1,5 +1,5 @@
 # Drill Network Functions
-=======
+
 This library contains a collection of network-related functions for Apache Drill. It includes:
 
 * **`inet_aton(<IPv4>)`**:  This function converts an IPv4 address in dotted decimal notation into an integer.  This is useful for sorting IP addresses, and reducing the amount of space that they take on disk.
