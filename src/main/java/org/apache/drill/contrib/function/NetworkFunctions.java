@@ -248,4 +248,79 @@ public class NetworkFunctions{
 
         }
     }
+
+    @FunctionTemplate(
+        name = "urlencode",
+        scope = FunctionTemplate.FunctionScope.SIMPLE,
+        nulls = FunctionTemplate.NullHandling.NULL_IF_NULL
+    )
+    public static class urlencodeFunction implements DrillSimpleFunc {
+
+        @Param
+        VarCharHolder input_string;
+
+        @Output
+        VarCharHolder output_string;
+
+        @Inject
+        DrillBuf buffer;
+
+        public void setup() {
+        }
+
+        public void eval() {
+
+            String url = org.apache.drill.exec.expr.fn.impl.StringFunctionHelpers.toStringFromUTF8(input_string.start, input_string.end, input_string.buffer);
+
+            String outputValue = "";
+            try {
+                outputValue = java.net.URLEncoder.encode(url, "UTF-8");
+            }catch (Exception e){
+
+            }
+            output_string.buffer = buffer;
+            output_string.start = 0;
+            output_string.end = outputValue.getBytes().length;
+            buffer.setBytes(0, outputValue.getBytes());
+
+        }
+    }
+
+    @FunctionTemplate(
+        name = "urldecode",
+        scope = FunctionTemplate.FunctionScope.SIMPLE,
+        nulls = FunctionTemplate.NullHandling.NULL_IF_NULL
+    )
+    public static class urldecodeFunction implements DrillSimpleFunc {
+
+        @Param
+        VarCharHolder input_string;
+
+        @Output
+        VarCharHolder output_string;
+
+        @Inject
+        DrillBuf buffer;
+
+        public void setup() {
+        }
+
+        public void eval() {
+
+            String url = org.apache.drill.exec.expr.fn.impl.StringFunctionHelpers.toStringFromUTF8(input_string.start, input_string.end, input_string.buffer);
+
+            String outputValue = "";
+            try {
+                outputValue = java.net.URLDecoder.decode(url, "UTF-8");
+            }catch (Exception e){
+
+            }
+            output_string.buffer = buffer;
+            output_string.start = 0;
+            output_string.end = outputValue.getBytes().length;
+            buffer.setBytes(0, outputValue.getBytes());
+
+        }
+    }
+
 }
