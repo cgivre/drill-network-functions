@@ -20,6 +20,11 @@ This library contains a collection of network-related functions for Apache Drill
 
 * **`getHighAddress( <CIDR Block> )`**:  Returns the last IPv4 address in dotted decimal notation for a given CIDR Block
 
+* **`urldencode( <URL> )`**:  Decodes a the URL argument
+
+* **`urlencode( <URL> )`**:  Returns a URL encoded version of the argument
+
+
 ## Installing These Functions
 This collection of functions does not have any dependencies that are not already included in Drill.  You can build the functions from source by cloning this repository, navigating to the directory and typing: 
 `mvn clean package -DskipTests`.
