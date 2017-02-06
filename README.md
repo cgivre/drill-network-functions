@@ -20,7 +20,7 @@ This library contains a collection of network-related functions for Apache Drill
 
 * **`getHighAddress( <CIDR Block> )`**:  Returns the last IPv4 address in dotted decimal notation for a given CIDR Block
 
-* **`urldencode( <URL> )`**:  Decodes a the URL argument
+* **`urldencode( <URL> )`**:  Decodes a URL argument
 
 * **`urlencode( <URL> )`**:  Returns a URL encoded version of the argument
 
